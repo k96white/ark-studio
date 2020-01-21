@@ -1,1 +1,263 @@
-<!-- In this file you are going to write the CSS code -->
+/* In this file you are going to write the CSS code */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height:auto;
+    margin:0px auto;
+    display: grid;
+    border: 2px solid black;
+    grid-template-rows: 60px 550px 60px 400px 250px 350px 1fr;
+    grid-template-columns: 1fr;
+}
+
+.transparent_nav{
+    background: rgba(160, 160, 177, 0.9);
+    opacity: 0.9;
+    position: -webkit-sticky; 
+    position: sticky;
+    width: 100%;
+    top:0px;
+   
+    display: inline-block;
+}
+img#logo{
+    height: 50px;
+    width:50px;
+    position: absolute;
+    top:10px;
+    left:200px;
+}
+ul#nav_list{
+    list-style: none;
+    position: absolute;
+    top:20px;
+    right: 250px;
+}
+a:link{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color: brown;
+}
+li#nav_item_1{
+    display: inline-block;
+    padding-right: 5px;
+}
+li#nav_item_2{
+    display: inline-block;
+    padding-right: 5px;
+}
+li#nav_item_3{
+    display: inline-block;
+    padding-right: 5px;
+}
+li#nav_item_4{
+    display: inline-block;
+    padding-right: 5px;
+}
+img#billboard{
+    height: 100%;
+    width:100%;
+    overflow: visible;
+}
+.cta{
+    background: rgba(160, 160, 177, 0.7);
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: 0.7;
+    
+}
+#cta_text{
+    
+    padding-left: 20px;
+    padding-top: 20px;
+    
+   
+}
+#cta_link{
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    padding-top: 20px;
+    border: 1px solid black;
+    
+}
+#cta_link:hover{
+    color: blue;
+}
+.services{
+    background: brown;
+}
+#seperator{
+    margin-left: 300px;
+    
+}
+.service-header{
+    color: darkgray;
+    text-align: center;
+    padding-top: 60px;
+}
+ul.service-list{
+    list-style: none;
+    margin-left:220px;
+}
+li#service_1{
+    display: inline-block;
+    color: burlywood;
+    text-align: center;
+    
+}
+li#service_2{
+    display: inline-block;
+    color: burlywood;
+    text-align: center;
+    margin-left:120px;
+}
+li#service_3{
+    display: inline-block;
+    color: cornsilk;
+    text-align: center;
+    margin-left:120px;
+}
+.recent_work{
+    background: coral;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.fleximg1{
+    flex:1;
+    border: 1px solid black;
+}
+.fleximg2{
+    flex:1;
+    border: 1px solid black;
+}
+.fleximg3{
+    flex:1;
+    border:1px solid black;
+}
+.fleximg4{
+    flex:1;
+    border: 1px solid black;
+}
+.fleximg5{
+    flex: 1;
+    border: 1px solid black;
+}
+img#workimg1,#workimg2,#workimg3,#workimg4,#workimg5{
+    width:100%;
+    height: 100%;
+    animation: workimg 4s linear 0s 1;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;
+}
+@keyframes workimg{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.6;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+img#workimg1:hover{
+    cursor: grab;
+    animation-play-state: running;
+}
+img#workimg2:hover{
+    cursor: grab;
+    animation-play-state: running;
+
+}
+img#workimg3:hover{
+    cursor: grab;
+    animation-play-state: running;
+
+}
+img#workimg4:hover{
+    cursor: grab;
+    animation-play-state: running;
+
+}
+img#workimg5:hover{
+    cursor: grab;
+    animation-play-state: running;
+
+}
+.testimonials{
+    background: crimson;
+}
+ul.testimonial-list{
+    list-style: none;
+    margin-left:220px ;
+    color: cadetblue;
+}
+li#testimonial1{
+    display: inline-block;
+    text-align: center;
+    font-size: small;
+}
+li#testimonial2{
+    display:inline-block;
+    text-align: center;
+    font-size: small;
+    margin-left: 180px;
+}
+li#testimonial3{
+    display:inline-block;
+    text-align: center;
+    font-size: small;
+    margin-left: 210px;
+}
+
+footer{
+    display: grid;
+    background: darkkhaki;
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: 1fr;
+}
+.footer_widget{
+     display: flex;
+     justify-content: space-evenly;
+}
+.location{
+    color:black;
+    text-align: center;
+    
+}
+.company{
+    
+    text-align: center;
+}
+.support{
+    
+    text-align: center;
+
+}
+.about{
+   
+    text-align: center;
+}
+ul#comp_list{
+    list-style: none;
+}
+ul#sup_list{
+    list-style: none;
+}
+.copyright{
+    text-align: center;
+} 
